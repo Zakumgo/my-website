@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>网页示例</title>
+  <style>
+    /* CSS样式 */
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 20px;
+    }
+
+    h1 {
+      color: #333;
+    }
+
+    .container {
+      background-color: #f2f2f2;
+      padding: 20px;
+      border-radius: 5px;
+    }
+
+    button {
+      padding: 10px 20px;
+      background-color: #007bff;
+      color: #fff;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>欢迎来到我的网页</h1>
+    <p>这是一个简单的示例网页。</p>
+    <button id="myButton">点击我可以申请专利</button>
+    <p id="message"></p>
+  </div>
+
+  <script>
+    // JavaScript代码
+    var button = document.getElementById("myButton");
+    var message = document.getElementById("message");
+
+    button.addEventListener("click", function() {
+      message.innerHTML = "恭喜小李，点击了按钮！";
+    });
+  </script>
+</body>
+</html>
